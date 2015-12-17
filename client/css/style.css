@@ -1,0 +1,128 @@
+@font-face {
+  font-family: josefin;
+  src: url(test.ttf);
+}
+html,
+body {
+  font-family: josefin;
+  margin: 0;
+  padding: 0;
+}
+.head {
+  border: 10px solid #56188A;
+  font-weight: bold;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  font-size: 2.5rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 1rem;
+}
+.content {
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.side {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: 15rem;
+  top: 1rem;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  border-bottom: 0px solid black;
+}
+.side:hover{
+  border-bottom: 3px solid black;
+}
+.sidebar {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #3A4253;
+  width: 13rem;
+  color: #A0AABE;
+  height: 0%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.sidebar * {
+  font-size: 20px;
+  text-align: center;
+}
+.sidebar p {
+  color: white;
+}
+.sidebar ul li {
+  cursor: pointer;
+  border-left: 5px solid #3A4253;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+.sidebar ul li:hover {
+  background-color: #343B4B;
+  border-left: 5px solid #7F3EBA;
+  color: white;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar:hover {
+  box-shadow: 0px 0px 10px white,
+    inset 0px 0px 0px 0px white;
+}
+.animIn {
+  width: 13rem;
+  height: 100%;
+}
+.modal {
+  color: white;
+  z-index: 9999;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  width: 20rem;
+  background-color: #3A4253;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 99999rem rgba(0, 0, 0, 0.3);
+}
+.modal input[type="text"] {
+  color: white;
+  border: 0;
+  display: block;
+  text-align: center;
+  background-color: #3A4253;
+  width: 98%;
+  margin-top: 1rem;
+}
+.modal input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+  border-left: 2px solid red;
+  padding: 5px;
+  background-color: #3A4253;
+  color: white;
+  margin-top: 1rem;
+}
+.none {
+  display: none;
+}
+#turn {
+  text-align: center;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf8"></meta>
+  </head>
+  <body>
+
+  <div class="head">
+      <p>Tic Tac Toe</p>
+  </div>
+  <div class="content">
+    <canvas width="320" height="320" id="table">
+    </canvas>
+    <p id="turn"></p>
+  </div>
+
+  <p class="side">User List</p>
+
+  <div class="sidebar">
+    <p><b>Click to invite a player</b></p>
+    <ul>
+    {{#each users}}
+    <li data-val="{{this}}">{{this}}</li>
+    {{/each}}
+    </ul>
+  </div>
+
+  <modal id="reg" class="none">
+    <h3>REGISTRY</h3>
+    <label for="name"><b>Name:<b></label>
+    <input name="name" type="text" id="name" placeholder="Enter Your Name ..." />
+    <input type="submit" value="Submit" id="submit" />
+  </modal>
+
+  <modal id="offer" class="none">
+    <h3>OFFER</h3>
+    <p id="offerConent"></p>
+    <input type="submit" value="Accept" id="accept" />
+    <input type="submit" value="Reject" id="reject" />
+  </modal>
+
+  <modal id="notifiction" class="none">
+    <p id="nConent"></p>
+    <input type="submit" value="OK" id="ok" />
+  </modal>
+
+  </body>
+  <script src="js/libs/zepto.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</html>
